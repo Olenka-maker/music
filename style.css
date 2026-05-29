@@ -1,0 +1,276 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0b0b0b;
+    color:white;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background:black;
+    border-bottom:2px solid #8b0000;
+}
+
+.logo{
+    color:#ff1a1a;
+    font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:2px;
+}
+
+nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ff1a1a;
+}
+
+.hero{
+    height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-image: url(./29fd63097a7a976ccca89b4f2cbb9e7c\ 1.png);
+    text-align:center;
+    padding:20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero h1{
+    font-size:40px;
+    text-transform:uppercase;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#ff1a1a;
+    color:white;
+    margin-top:20px;
+    text-decoration:none;
+}
+
+.page{
+    padding:60px 40px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+}
+
+.card{
+    background:#111;
+    padding:20px;
+    border:1px solid #300;
+}
+
+.gallery{
+    display:flex;
+    justify-content: center;
+    gap:50px;
+    margin-top:20px;
+}
+
+.img{
+    height:314px;
+    width: 236px;
+    background:#300;
+}
+
+
+.img1{
+    border-radius: 15px;
+}
+
+.form{
+    display:flex;
+    flex-direction:column;
+    max-width:400px;
+    gap:10px;
+}
+
+.form input, .form button{
+    padding:10px;
+    border:none;
+}
+
+.form button{
+    background:#ff1a1a;
+    color:white;
+    cursor:pointer;
+}
+
+.success{
+    margin-top:30px;
+    padding:20px;
+    background:#200;
+    border-left:5px solid #ff1a1a;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+
+.menu-hero{
+    position: relative;
+    height: 85vh;
+    background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),
+    url("https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1400&auto=format&fit=crop");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 60px;
+    overflow: hidden;
+}
+
+.menu-content{
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+}
+
+
+
+.menu-hero h1{
+    font-size:70px;
+    line-height:1;
+    margin-bottom:25px;
+    text-transform:uppercase;
+    text-shadow:0 0 20px rgba(255,0,0,0.7);
+}
+
+.menu-text{
+    color:#d0d0d0;
+    line-height:1.7;
+    font-size:18px;
+    max-width:600px;
+}
+
+.quests{
+    padding:80px 60px;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    background:#070707;
+}
+
+.quest-card{
+    display:flex;
+    gap:30px;
+    align-items:flex-start;
+    background:#111;
+    border-left:5px solid #ff1a1a;
+    padding:35px;
+    transition:0.4s;
+    position:relative;
+    overflow:hidden;
+}
+
+
+
+.quest-number{
+    font-size:70px;
+    font-weight:bold;
+    color:#330000;
+    min-width:120px;
+}
+
+.quest-info h2{
+    font-size:34px;
+    margin-bottom:15px;
+    color:white;
+}
+
+.quest-info p{
+    color:#cfcfcf;
+    line-height:1.7;
+    margin-bottom:15px;
+}
+
+.quest-info span{
+    color:#ff4d4d;
+    font-weight:bold;
+}
+
+.warning{
+    padding:70px 40px;
+    text-align:center;
+    background:linear-gradient(to right,#1a0000,#300000,#1a0000);
+}
+
+.warning h2{
+    font-size:40px;
+    margin-bottom:20px;
+    color:#ff2a2a;
+}
+
+.warning p{
+    max-width:700px;
+    margin:auto;
+    color:#ddd;
+    line-height:1.7;
+}
+
+.active{
+    color:#ff1a1a;
+}
+
+
+
+@media(max-width:768px){
+
+    .menu-hero{
+        padding:30px;
+        height:70vh;
+    }
+
+    .menu-hero h1{
+        font-size:42px;
+    }
+
+    .menu-text{
+        font-size:16px;
+    }
+
+    .quests{
+        padding:40px 20px;
+    }
+
+    .quest-card{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .quest-number{
+        font-size:45px;
+    }
+
+    .quest-info h2{
+        font-size:26px;
+    }
+
+}
